@@ -8,9 +8,7 @@ const ContactPage = () => {
         Contact us
       </h2>
       <p className="text-center w-responsive mx-auto pb-5">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
-        error amet numquam iure provident voluptate esse quasi, veritatis
-        totam voluptas nostrum quisquam eum porro a pariatur veniam.
+      Please find below contact details for our offices in India:
       </p>
       <MDBRow>
         <MDBCol lg="5" className="lg-0 mb-4">
@@ -73,7 +71,7 @@ const ContactPage = () => {
             style={{ height: "400px" }}
           >
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d76765.98321148289!2d-73.96694563267306!3d40.751663750099084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spl!2spl!4v1525939514494"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14413.160028971528!2d81.7779687224877!3d25.42856616960931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398534ad170e1f17%3A0x71479535f196f80c!2sKalindipuram%2C%20Prayagraj%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1609873477247!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"
               title="This is a unique title"
               width="100%"
               height="100%"
@@ -87,14 +85,14 @@ const ContactPage = () => {
               <MDBBtn tag="a" floating color="blue" className="accent-1">
                 <MDBIcon icon="map-marker-alt" />
               </MDBBtn>
-              <p>New York, 94126</p>
-              <p className="mb-md-0">United States</p>
+              <p>Kalindipuram, Prayagraj, Uttar Pradesh ,211011</p>
+              <p className="mb-md-0">India</p>
             </MDBCol>
             <MDBCol md="4">
               <MDBBtn tag="a" floating color="blue" className="accent-1">
                 <MDBIcon icon="phone" />
               </MDBBtn>
-              <p>+ 01 234 567 89</p>
+              <p>+91 01 234 567 89</p>
               <p className="mb-md-0">Mon - Fri, 8:00-22:00</p>
             </MDBCol>
             <MDBCol md="4">

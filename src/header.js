@@ -1,5 +1,7 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import {Link} from "react-router-dom";
+
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import {
   MDBNavbar,
   MDBNavbarBrand,
@@ -17,10 +19,19 @@ import {
   MDBFormInline,
   MDBCard,
   MDBCardBody,
-  MDBInput
+  MDBInput,
+  
 } from 'mdbreact';
 import './ContactFormPage.css';
+
 import logo from "./logo.png" ;
+
+import ContactPage from "./Contact";
+
+
+
+
+
 
 class ContactFormPage extends React.Component {
   state = {
@@ -52,7 +63,7 @@ class ContactFormPage extends React.Component {
     );
     return (
       <div id='contactformpage'>
-        <Router>
+        
           <div>
             <MDBNavbar
               style={navStyle}
@@ -77,10 +88,11 @@ class ContactFormPage extends React.Component {
                       <MDBNavLink to='/'>Home</MDBNavLink>
                     </MDBNavItem>
                     <MDBNavItem>
-                      <MDBNavLink to='/contact'>Contact</MDBNavLink>
+                      <MDBNavLink  to="/contact">Contact</MDBNavLink>
+                     
                     </MDBNavItem>
                     <MDBNavItem>
-                      <MDBNavLink to='/Address'>Address</MDBNavLink>
+                      <MDBNavLink to='/address'>Address</MDBNavLink>
                     </MDBNavItem>
                   </MDBNavbarNav>
                   <MDBNavbarNav right>
@@ -100,9 +112,10 @@ class ContactFormPage extends React.Component {
                 </MDBCollapse>
               </MDBContainer>
             </MDBNavbar>
+           
             {collapseID && overlay}
           </div>
-        </Router>
+        
 
         <MDBView>
           <MDBMask overlay='indigo-strong' />
@@ -158,8 +171,14 @@ class ContactFormPage extends React.Component {
 
 
       </div>
+      
     );
+   
   }
+  
 }
+
+
+
 
 export default ContactFormPage;
