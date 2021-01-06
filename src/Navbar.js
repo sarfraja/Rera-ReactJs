@@ -1,10 +1,60 @@
 import React from 'react';
-import { render } from 'react-dom';
-import ContactFormPage from './Header';
 
-const nav = () => {
-    render(
-        <div>
+import {
+  MDBNavbar,
+  MDBNavbarBrand,
+  MDBNavbarNav,
+  MDBNavItem,
+  MDBNavLink,
+  MDBNavbarToggler,
+  MDBCollapse,
+ 
+  MDBContainer,
+  MDBFormInline,
+ 
+  
+} from 'mdbreact';
+import './ContactFormPage.css';
+
+
+
+
+
+
+
+
+class Nav extends React.Component {
+  state = {
+    collapseID: ''
+  };
+
+  toggleCollapse = collapseID => () =>
+    this.setState(prevState => ({
+      collapseID: prevState.collapseID !== collapseID ? collapseID : ''
+    }));
+
+  componentDidMount() {
+    document.querySelector('nav').style.height = '65px';
+  }
+
+  componentWillUnmount() {
+    document.querySelector('nav').style.height = 'auto';
+  }
+
+  render() {
+    const { collapseID } = this.state;
+    const navStyle = { marginTop: '0px' };
+    const overlay = (
+      <div
+        id='sidenav-overlay'
+        style={{ backgroundColor: 'transparent' }}
+        onClick={this.toggleCollapse('navbarCollapse')}
+      />
+    );
+    return (
+      
+        
+          <div>
             <MDBNavbar
               style={navStyle}
               color='deep-purple darken-4'
@@ -55,7 +105,9 @@ const nav = () => {
            
             {collapseID && overlay}
           </div>
-    )
+    );
+  }
+
 }
 
-export default nav;
+export default Nav;

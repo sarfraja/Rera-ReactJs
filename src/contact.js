@@ -1,9 +1,27 @@
 import React from "react";
-import { MDBRow, MDBCol, MDBCard, MDBCardBody, MDBIcon, MDBBtn, MDBInput } from "mdbreact";
+import { MDBRow, MDBCol, MDBCard, MDBCardBody, MDBIcon, MDBBtn, MDBInput,MDBMask, MDBView } from "mdbreact";
 
 const ContactPage = () => {
   return (
-    <section className="my-5">
+    
+
+    <MDBView>
+    <img
+      src="https://img.freepik.com/free-photo/low-angle-view-skyscrapers_1359-1105.jpg?size=626&ext=jpg"
+      height="100%"
+      width="100%"
+      
+      className="img-fluid"
+      alt=""
+      
+    />
+    <MDBMask overlay="white-strong" >
+
+
+    <section className="my-5" >
+
+
+    
       <h2 className="h1-responsive font-weight-bold text-center my-5">
         Contact us
       </h2>
@@ -105,8 +123,16 @@ const ContactPage = () => {
           </MDBRow>
         </MDBCol>
       </MDBRow>
-    </section>
+    
+      </section>
+
+    </MDBMask>
+  </MDBView>
+
+ 
+  
   );
 }
+
 
 export default ContactPage;

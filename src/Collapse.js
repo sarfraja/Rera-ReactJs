@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { MDBBtn, MDBCollapse } from "mdbreact";
 
+
 class CollapsePage extends Component {
 state = {
   collapseID: ""
@@ -15,12 +16,16 @@ toggleCollapse = collapseID => () => {
 render() {
   return (
       <>
+      <div className="container"
+      >
       <MDBBtn
         color="primary"
        
         onClick={this.toggleCollapse("Collapse")}
-        style={{ marginBottom: "1rem" }}
-    >
+        style={{ marginBottom: "1rem" }}>
+
+
+
       Why Sell with us +
     </MDBBtn>
     <MDBCollapse id="Collapse" isOpen={this.state.collapseID}>
@@ -114,7 +119,7 @@ In a connected world, your home’s buyer could be across the street – or acro
         </center>
         </MDBCollapse>
 
-
+        </div>
       </>
     );
   }
