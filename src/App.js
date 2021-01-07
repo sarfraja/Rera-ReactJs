@@ -15,11 +15,10 @@ const App = () => {
     return(
         <>
       <Nav />
-        <switch>
+        <Switch>
             <Route exact path="/" component={Home}  />
             <Route path="/Contact" component={ContactPage} />
-        </switch>
-        
+        </Switch>
         <FooterPage /> 
         
         </>

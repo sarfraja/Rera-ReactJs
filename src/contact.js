@@ -1,32 +1,19 @@
 import React from "react";
-import { MDBRow, MDBCol, MDBCard, MDBCardBody, MDBIcon, MDBBtn, MDBInput,MDBMask, MDBView } from "mdbreact";
+import { MDBRow, MDBCol, MDBCard, MDBCardBody, MDBIcon, MDBBtn, MDBInput } from "mdbreact";
 
 const ContactPage = () => {
   return (
-    
-
-    <MDBView>
-    <img
-      src="https://img.freepik.com/free-photo/low-angle-view-skyscrapers_1359-1105.jpg?size=626&ext=jpg"
-      height="100%"
-      width="100%"
-      
-      className="img-fluid"
-      alt=""
-      
-    />
-    <MDBMask overlay="white-strong" >
-
-
-    <section className="my-5" >
-
 
     
+
+
+    <section className="my5"  style={{backgroundColor:'	#ec79b3' , marginTop:'-3em'}} >
+      <br /><br /><br />
       <h2 className="h1-responsive font-weight-bold text-center my-5">
         Contact us
       </h2>
       <p className="text-center w-responsive mx-auto pb-5">
-      Please find below contact details for our offices in India:
+      The Real Estate (Regulation and Development) Act, 2016 is an Act of the Parliament of India which seeks to protect home-buyers as well as help boost investments in the real estate industry. The Act came into force from 1 May 2016.
       </p>
       <MDBRow>
         <MDBCol lg="5" className="lg-0 mb-4">
@@ -89,7 +76,7 @@ const ContactPage = () => {
             style={{ height: "400px" }}
           >
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14413.160028971528!2d81.7779687224877!3d25.42856616960931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398534ad170e1f17%3A0x71479535f196f80c!2sKalindipuram%2C%20Prayagraj%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1609873477247!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14413.162346885149!2d81.77794725414695!3d25.428546789349735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398534ad170e1f17%3A0x71479535f196f80c!2sKalindipuram%2C%20Prayagraj%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1609999416947!5m2!1sen!2sin" width="600" height="450" frameBorder="0" style="border:0;" allowFullScreen="" aria-hidden="false" tabIndex="0"
               title="This is a unique title"
               width="100%"
               height="100%"
@@ -100,21 +87,21 @@ const ContactPage = () => {
           <br />
           <MDBRow className="text-center">
             <MDBCol md="4">
-              <MDBBtn tag="a" floating color="blue" className="accent-1">
+              <MDBBtn tag="a" floating="true" color="blue" className="accent-1">
                 <MDBIcon icon="map-marker-alt" />
               </MDBBtn>
-              <p>Kalindipuram, Prayagraj, Uttar Pradesh ,211011</p>
-              <p className="mb-md-0">India</p>
+              <p>New York, 94126</p>
+              <p className="mb-md-0">United States</p>
             </MDBCol>
             <MDBCol md="4">
-              <MDBBtn tag="a" floating color="blue" className="accent-1">
+              <MDBBtn tag="a" floating="true" color="blue" className="accent-1">
                 <MDBIcon icon="phone" />
               </MDBBtn>
-              <p>+91 01 234 567 89</p>
+              <p>+ 01 234 567 89</p>
               <p className="mb-md-0">Mon - Fri, 8:00-22:00</p>
             </MDBCol>
             <MDBCol md="4">
-              <MDBBtn tag="a" floating color="blue" className="accent-1">
+              <MDBBtn tag="a" floating="true" color="blue" className="accent-1">
                 <MDBIcon icon="envelope" />
               </MDBBtn>
               <p>info@gmail.com</p>
@@ -123,16 +110,10 @@ const ContactPage = () => {
           </MDBRow>
         </MDBCol>
       </MDBRow>
-    
-      </section>
+    </section>
 
-    </MDBMask>
-  </MDBView>
 
- 
-  
   );
 }
-
 
 export default ContactPage;
