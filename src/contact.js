@@ -7,8 +7,8 @@ const ContactPage = () => {
     
 
 
-    <section className="my5"  style={{backgroundColor:'	#ec79b3' , marginTop:'-3em'}} >
-      <br /><br /><br />
+    <section className="my5"  style={{ marginTop:'-3em'}} >
+      <br /><br /><br /><br />
       <h2 className="h1-responsive font-weight-bold text-center my-5">
         Contact us
       </h2>
@@ -90,22 +90,22 @@ const ContactPage = () => {
               <MDBBtn tag="a" floating="true" color="blue" className="accent-1">
                 <MDBIcon icon="map-marker-alt" />
               </MDBBtn>
-              <p>New York, 94126</p>
-              <p className="mb-md-0">United States</p>
+              <p>Kalindipuram, 211011</p>
+              <p className="mb-md-0">India</p>
             </MDBCol>
             <MDBCol md="4">
               <MDBBtn tag="a" floating="true" color="blue" className="accent-1">
                 <MDBIcon icon="phone" />
               </MDBBtn>
-              <p>+ 01 234 567 89</p>
+              <p>+91 9839333312, +91 7376333322</p>
               <p className="mb-md-0">Mon - Fri, 8:00-22:00</p>
             </MDBCol>
             <MDBCol md="4">
               <MDBBtn tag="a" floating="true" color="blue" className="accent-1">
                 <MDBIcon icon="envelope" />
               </MDBBtn>
-              <p>info@gmail.com</p>
-              <p className="mb-md-0">sale@gmail.com</p>
+              <p>www.upreraconsultant.com</p>
+              <p className="mb-md-0">uprera@gmail.com</p>
             </MDBCol>
           </MDBRow>
         </MDBCol>

@@ -3,6 +3,7 @@ import {  MDBRow, MDBCol, MDBCard, MDBCardBody, MDBMask, MDBIcon, MDBView, MDBBt
 
 const BlogPage = () => {
   return (
+   
     <MDBCard className="my-5 px-5 pb-5">
       <MDBCardBody>
         <h2 className="h1-responsive font-weight-bold text-center my-5">
@@ -135,7 +136,9 @@ const BlogPage = () => {
           </MDBCol>
         </MDBRow>
       </MDBCardBody>
+     
     </MDBCard>
+   
   );
 }
 

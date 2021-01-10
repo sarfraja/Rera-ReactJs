@@ -6,7 +6,8 @@ import Home from "./Home";
 import ContactPage from "./Contact";
 import Nav from "./Navbar";
 import FooterPage from "./Footer";
-
+import About from "./About";
+import Catalogue from "./Catalogue";
 
 
 
@@ -18,6 +19,8 @@ const App = () => {
         <Switch>
             <Route exact path="/" component={Home}  />
             <Route path="/Contact" component={ContactPage} />
+            <Route path="/About" component={About} />
+            <Route path="/Catalogue" component={Catalogue} />
         </Switch>
         <FooterPage /> 
         
